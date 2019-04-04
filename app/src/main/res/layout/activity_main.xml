@@ -1,18 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOODTRUCKS"
+            android:layout_gravity="center_horizontal"
+            android:textSize="28dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS CLASICOS"
+                android:textSize="24dp"
+                />
+
+            <CheckBox
+                android:id="@+id/cbHamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hamburgesa" />
+
+            <CheckBox
+                android:id="@+id/cbHotd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HotDog" />
+
+            <CheckBox
+                android:id="@+id/cbVeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetariano" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS CHEESES"
+                android:textSize="24dp"
+                />
+
+            <CheckBox
+                android:id="@+id/cbCHamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese Burger" />
+
+            <CheckBox
+                android:id="@+id/cbCHotd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HotDog Cheese" />
+
+            <CheckBox
+                android:id="@+id/cbCfilete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filete Cheese" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS ROYAL"
+                android:textSize="24dp"
+                />
+
+            <CheckBox
+                android:id="@+id/cbRHamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hamburguesa Royal" />
+
+
+            <CheckBox
+                android:id="@+id/cbRHotd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HotDog Royal" />
+
+            <CheckBox
+                android:id="@+id/cbRfilete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filete Royal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar a Preparar"
+            android:layout_gravity="center_horizontal"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS ROYAL"
+                android:textSize="24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS ROYAL"
+                android:textSize="24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS ROYAL"
+                android:textSize="24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOS ROYAL"
+                android:textSize="24dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
